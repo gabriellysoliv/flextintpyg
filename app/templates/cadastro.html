@@ -1,22 +1,41 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-  <form action="/cadastrarUsuario" method="POST">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h1>CADASTRO</h1>
+    <br><br>
+<div class="botao">
+  <form class="form" action="/cadastrarUsuario" method="POST">
     <label>CPF:</label>
-    <input type="text" name="cpf" id="cpf"/> <br> <br>
+    <input class="botton" type="text" name="cpf" id="cpf"/> <br> <br>
 
     <label>Nome:</label>
-    <input type="text" name="nome" id="nome"/> <br> <br>
+    <input class="botton" type="text" name="nome" id="nome"/> <br> <br>
 
     <label>Telefone:</label>
-    <input type="text" name="telefone" id="telefone"/> <br> <br>
+    <input class="botton" type="text" name="telefone" id="telefone"/> <br> <br>
 
      <label>Endereço:</label>
-    <input type="text" name="endereco" id="endereco"/> <br> <br>
+    <input class="botton" type="text" name="endereco" id="endereco"/> <br> <br>
 
-    <button>Cadastrar</button>
+   <button class="btn btn-outline-dark">CADASTRAR</button>
   </form>
-  <a href="/listar">Consutar Tudo</a> <br><br>
-  <a href="/listarIndividual">Consutar Individual</a>
-  <a href="/atualizar">Atualizar</a>
-  <a href="excluir">Excluir</a>
+<br><br>
+
+    <a class="btn btn-primary" href="/listar" role="button">Consultar tudo</a>
+    <a class="btn btn-primary" href="/listarIndividual" role="button">Consultar individual</a>
+    <a class="btn btn-primary" href="/atualizar" role="button">Atualizar</a>
+    <a class="btn btn-primary" href="/excluir" role="button">Excluir</a>
+  </div>
+
+
+
 {% endblock %}
