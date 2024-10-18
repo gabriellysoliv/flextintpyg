@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <form class="form" action="/atualize" method="POST">
+    <label>CPF:</label>
+    <input class="botton" type="text" name="cpf" id="cpf"/> <br> <br>
+
+    <label>Nome:</label>
+    <input class="botton" type="text" name="nome" id="nome"/> <br> <br>
+
+   <button class="btn btn-outline-dark">CADASTRAR</button>
+  </form>
+
+  {% endblock %}
