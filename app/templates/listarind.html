@@ -1,17 +1,11 @@
-{% extends 'base.html' %}
-{% block conteudo %}
-<br>
-<br>
-<br>
-<br>
-<br>
-    <br><br>
+  {% extends 'base.html' %}
+  {% block conteudo %}
 
-<h1>FAÇA SEU CADASTRO</h1>  <br>
-<div class="botao">
-  <form class="form" action="/cadastrarUsuario" method="POST">
+  <br><br><br><br><br><br><br><br><br><br>
 
-       <p class="form-title">CADASTRO</p>
+  <form class="form" action="/listarIndividual" method="POST">
+
+       <p class="form-title">LISTAR INDIVIDUAL</p>
         <div class="input-container">
           <label>CPF:</label><input class="botton" type="text" name="cpf" id="cpf"/>
           <span>
@@ -28,23 +22,10 @@
        <div class="input-container">
          <label>ENDEREÇO:</label><input class="botton" type="text" name="endereco" id="endereco"/>
         </div>
-
-
-
-   <button class="btn btn-outline-dark">CADASTRAR</button>
+      <button class="btn btn-outline-dark">Consultar</button>
   </form>
-<br><br>
 
-
-    <a class="btn btn-primary" href="/listar" role="button">Consultar tudo</a>
-    <a class="btn btn-primary" href="/listarInd" role="button">Consultar individual</a>
-    <a class="btn btn-primary" href="/atualizar" role="button">Atualizar</a>
-    <a class="btn btn-primary" href="/exxcluir" role="button">Excluir</a>
-
-  </div>
-
-
-<br> <br>
+  <br> <br>
 <!-- Footer -->
 
   <footer class="text-center text-lg-start" style="background-color: #f4efec; color: black;">
@@ -243,4 +224,6 @@
 </footer>
 <!-- Footer -->
 
-{% endblock %}
+
+
+  {% endblock %}
